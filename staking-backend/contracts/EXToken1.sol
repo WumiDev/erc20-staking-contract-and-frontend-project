@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
-contract WDToken is ERC20, Ownable {
+contract EXToken1 is ERC20, Ownable {
     using SafeMath for uint256;
     uint256 tokensOneEthCanBuy = 1000;   
     address[] internal _stakeholders;
@@ -22,7 +22,7 @@ contract WDToken is ERC20, Ownable {
     event Reward(address addr, uint256 reward, bool value);
     // event _Transfer(address indexed from, address indexed to, uint256 value);
 
-    constructor() ERC20("WDToken", "WDT") {
+    constructor() ERC20("EXToken1", "EXT1") {
         _mint(msg.sender, 1000 * 10**18);        
     }   
 
